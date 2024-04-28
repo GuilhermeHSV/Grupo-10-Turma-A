@@ -1,7 +1,5 @@
 package jogo_rpg;
-
+//Iniciando o Projeto!!!
 public class jogo {
-	public static void main(String[]args){
-	System.out.println("oi");
-	}
+
 }
