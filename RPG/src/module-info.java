@@ -1,0 +1,2 @@
+module jogo_rpg {
+}
