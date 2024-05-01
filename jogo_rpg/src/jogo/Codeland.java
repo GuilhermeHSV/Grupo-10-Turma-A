@@ -49,6 +49,20 @@ public class Codeland {
 
     }
 
+    public static void jogar() { // Classe para começar a jogar o RPG
+        System.out.println("\r\n" + //
+                "   ____          _      _                 _ \r\n" + //
+                "  / ___|___   __| | ___| | __ _ _ __   __| |\r\n" + //
+                " | |   / _ \\ / _` |/ _ \\ |/ _` | '_ \\ / _` |\r\n" + //
+                " | |__| (_) | (_| |  __/ | (_| | | | | (_| |\r\n" + //
+                "  \\____\\___/ \\__,_|\\___|_|\\__,_|_| |_|\\__,_|\r\n" + //
+                "                                            \r\n" + //
+                "");
+
+        System.out.println(
+                "Você é um(a) jovem aspirante a programador(a) prestes a embarcar em uma jornada emocionante pelo mundo da programação Java. Sua aventura começa em uma pequena vila chamada Codeland, onde a magia da codificação dá vida a máquinas e dispositivos incríveis.\n");
+    }
+
     public static void main(String[] args) {
         introducao(); // Chamando introducao para exibir o título inicial
         selecionarOpcao();
