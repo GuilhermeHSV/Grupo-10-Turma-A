@@ -1,6 +1,7 @@
 package jogo;
 
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Codeland {
 
@@ -26,6 +27,7 @@ public class Codeland {
         switch (escolha) {
             case 1:
                 System.out.println("Clicou em Instruções!\n ");
+                instrucoes();
                 break;
             case 2:
                 System.out.println("Clicou em Jogar!\n ");
@@ -33,6 +35,7 @@ public class Codeland {
                 break;
             case 3:
                 System.out.println("Clicou em Créditos!\n ");
+                creditos();
                 break;
             case 4:
                 System.out.println("Clicou em Sair! Volte Sempre!\n ");
@@ -45,8 +48,8 @@ public class Codeland {
         scanner.close();
     }
 
-    public static void instrucoes() {
-
+    public static void instrucoes() { // Classe para ver as instruções do Jogo
+        System.out.println("Adicionar Instruções");
     }
 
     public static void jogar() { // Classe para começar a jogar o RPG
@@ -61,6 +64,21 @@ public class Codeland {
 
         System.out.println(
                 "Você é um(a) jovem aspirante a programador(a) prestes a embarcar em uma jornada emocionante pelo mundo da programação Java. Sua aventura começa em uma pequena vila chamada Codeland, onde a magia da codificação dá vida a máquinas e dispositivos incríveis.\n");
+    }
+
+    public static void creditos() {
+        System.out.println("Créditos\r\n" + //
+                "\r\n" + //
+                "Desenvolvimento do Jogo:\r\n" + //
+                // "- Direção de Projeto: [Nome do Diretor de Projeto]\r\n" + //
+                "- Programação: [Guilherme Vasconcellos, Jhonny Lucca, Giovanni Campos, Lucas Coelho]\r\n" + //
+                "\r\n" + //
+                "Tecnologias Utilizadas:\r\n" + //
+                "- Linguagens: [Java]\r\n" + //
+                "- Bibliotecas e Frameworks: [##]\r\n" + //
+                "\r\n" + //
+                "Copyright [2024] Codeland. Todos os direitos reservados.\r\n" + //
+                "");
     }
 
     public static void main(String[] args) {
