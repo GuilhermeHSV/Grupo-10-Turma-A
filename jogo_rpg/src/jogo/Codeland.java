@@ -70,7 +70,7 @@ public class Codeland {
         System.out.println("Créditos\r\n" + //
                 "\r\n" + //
                 "Desenvolvimento do Jogo:\r\n" + //
-                // "- Direção de Projeto: [Nome do Diretor de Projeto]\r\n" + //
+                
                 "- Programação: [Guilherme Vasconcellos, Jhonny Lucca, Giovanni Campos, Lucas Coelho]\r\n" + //
                 "\r\n" + //
                 "Tecnologias Utilizadas:\r\n" + //
