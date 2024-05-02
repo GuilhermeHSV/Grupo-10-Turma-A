@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Codeland {
 
-    public static void tituloJogo(String titulo) { // CLasse parar
+    public static void tituloJogo(String titulo) { // CLasse para exibir o Título do Jogo RPG
         System.out.println("#".repeat(titulo.length()));
         System.out.println(titulo);
         System.out.println("#".repeat(titulo.length()));
