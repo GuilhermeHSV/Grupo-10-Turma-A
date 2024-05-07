@@ -82,7 +82,7 @@ public class Codeland {
     }
 
     public static void main(String[] args) {
-        introducao(); // Chamando introducao para exibir o título inicial
+        introducao(); // Chamando introdução para exibir o título inicial
         selecionarOpcao();
     }
 }
