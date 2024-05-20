@@ -216,20 +216,30 @@ public class Codeland {
             }
         }
 
-        String primeiroConfronto = "\nCode adentra naquela cidade futurista e claramente abandonada, um ambiente de desenvolvimento digital com códigos flutuando no ar e estruturas de dados animadas. Para uma pessoa comum, aquilo seria bizarro, mas para um programador, principalmente para 'Code', aquilo era Fantástico!\n"
-                + //
-                "O Mentor Virtual pede para Code parar um momento para que ele possa ensinar o básico dos fundamentos daquele mundo.\"\n";
+        String primeiroConfronto = "\nApós os dois pararem, Code sente a presença de algo saindo de trás de um prédio gigantesco que estava ao seu lado...\n";
 
         for (char letra : primeiroConfronto.toCharArray()) {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
+        String primeiroConfrontoDois = "Era uma criatura gigante de metal.\nEla tinha vários braços, talvez uns 8, uma cabeça quadrada e um olho particularmente sinistro no centro.\nEsse monstro começou a olhar lentamente em direção a Code...";
+
+        for (char letra : primeiroConfrontoDois.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        // continuar a partir daqui
+
         scanner.close();
     }
 
