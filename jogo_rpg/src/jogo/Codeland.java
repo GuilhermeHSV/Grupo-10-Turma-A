@@ -120,18 +120,21 @@ public class Codeland {
         Scanner scanner = new Scanner(System.in);
         int escolha = 0;
         while (true) {
-            System.out.println("Qual é a sintaxe correta para declarar uma variável inteira em Java\n\n");
+            System.out.println(
+                    "Qual é a sintaxe correta para declarar uma variável inteira em Java\n\n1 - integer x = 10\n2 - int x = 10\n3 - num x = 10");
             escolha = scanner.nextInt();
 
-            if (escolha == 1) {
-                System.out.println("Que maravilha! Esse é o espírito de um verdadeiro Herói.\n Agora vamos lá!");
-                break;
-            } else if (escolha == 2) {
+            if (escolha == 2) {
+                System.out.println("Acertou!");
                 System.out.println(
-                        "Code, o escolhido! Não tema, pois será você quem trará a vitória para o nosso povo. Vamos lá para a cidade que eu lhe mostrarei o caminho.");
+                        "O quiz que estava no rosto do monstro se apaga e ele simplesmente congela, como se estivesse sem energia!");
                 break;
+            } else if (escolha == 1 || escolha == 3) {
+                System.out.println(
+                        "Errou! Tente novamente!");
+
             } else {
-                System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
+                System.out.println("Por favor, escolha uma opção válida (1, 2 ou 3)!");
             }
         }
 
@@ -341,7 +344,7 @@ public class Codeland {
 
             if (escolha == 1) {
                 perguntaUm();
-
+                break;
             } else if (escolha == 2) {
                 System.out.println(
                         "Code, o escolhido! Não tema, pois será você quem trará a vitória para o nosso povo. Vamos lá para a cidade que eu lhe mostrarei o caminho.");
