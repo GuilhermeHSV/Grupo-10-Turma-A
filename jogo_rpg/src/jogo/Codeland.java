@@ -229,7 +229,7 @@ public class Codeland {
                 e.printStackTrace();
             }
         }
-
+        // continuar a partir daqui
         scanner.close();
     }
 
