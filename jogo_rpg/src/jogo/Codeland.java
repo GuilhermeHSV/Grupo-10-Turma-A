@@ -67,17 +67,26 @@ public class Codeland {
                 "                        |_|                            \r\n" + //
                 "\n\n");
 
-        System.out.println(
-                "Em mais um dia normal em seu trabalho, 'Code' trabalhava em um projeto complexo de Java, a linguagem de programação na qual tinha mais dificuldade. De repente 'Code' começou a sentir arrepios e seu computador começou a fazer barulhos estranhos. Um ponto preto apareceu em seu monitor e, por instinto, 'Code' aproximou seu rosto da tela para tentar ver melhor aquele ponto que aparentemente estava crescendo a cada segundo.");
-        try {
+        String introducao = "Em mais um dia normal em seu trabalho, 'Code' trabalhava em um projeto complexo de Java, a linguagem de programação na qual tinha mais dificuldade. De repente 'Code' começou a sentir arrepios e seu computador começou a fazer barulhos estranhos. Um ponto preto apareceu em seu monitor e, por instinto, 'Code' aproximou seu rosto da tela para tentar ver melhor aquele ponto que aparentemente estava crescendo a cada segundo.\n";
 
-            TimeUnit.SECONDS.sleep(20);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        for (char letra : introducao.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(20);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
         System.out.println("Quando, de repente...");
 
+        try {
+
+            TimeUnit.SECONDS.sleep(10); // deixar como 20 no teste final
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String textoPortal = "\r\n" + //
                 "         . :H@@@MM@M#H/.,+%;,\r\n" + //
                 "      ,/X+ +M@@M@MM%=,-%HMMM@X/,\r\n" + //
@@ -102,15 +111,31 @@ public class Codeland {
         for (char caractere : textoPortal.toCharArray()) {
             System.out.print(caractere);
             try {
-                // Atraso de 50 milissegundos para um efeito de aparecer aos poucos
-                TimeUnit.MILLISECONDS.sleep(20);
+                // Atraso nos caracteres
+                TimeUnit.MILLISECONDS.sleep(15); // deixar nos 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
-        System.out.println(
-                "é sugado por um portal que se abre no monitor do seu computador. Ele acorda em Cybersantum, um mundo de código em constante mutação, onde conhece o Mentor Virtual.");
+        try {
+
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        String introducaoDois = "\n\n'Code' é sugado por um portal que se abre no monitor do seu computador. Ele acorda em um mundo de código em constante mutação. \n De longe ele percebe um painel com o nome : \n\n";
+
+        for (char letra : introducaoDois.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(15);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
         String[] textoJogo = {
                 "\r\n" + //
@@ -119,7 +144,7 @@ public class Codeland {
                         " | |   / _ \\ / _` |/ _ \\ |/ _` | '_ \\ / _` |\r\n" + //
                         " | |__| (_) | (_| |  __/ | (_| | | | | (_| |\r\n" + //
                         "  \\____\\___/ \\__,_|\\___|_|\\__,_|_| |_|\\__,_|\r\n" + //
-                        "                                            \r\n"
+                        "                                            \r\n\n"
         };
 
         for (String linha : textoJogo) {
@@ -133,6 +158,19 @@ public class Codeland {
                 }
             }
         }
+
+        String introducaoMentorVirtual = "\"Enquanto 'Code' olhava perplexo para aquele painel, pensando em como ele foi parar naquele lugar estranhamente familiar, um homem se aproximava no horizonte.\nEra um homem de estatura baixa, careca e com uma barba mal feita, vestindo um sobretudo marrom e óculos 'tecnológicos'.\nEle se aproximou de 'Code' apresentando-se como: 'O Mentor Virtual'";
+
+        for (char letra : introducaoMentorVirtual.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(15);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     public static void creditos() {
