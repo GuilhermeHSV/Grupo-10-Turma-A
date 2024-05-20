@@ -50,8 +50,7 @@ public class Codeland {
 
     public static void instrucoes() { // Classe para ver as instruções do Jogo
 
-        System.out.println(
-                "Você assume o papal de 'Code', um jovem programador talentoso, que é transportado para um mundo virtual de CodeLand, após um estranho incidente no laboratório de programação de sua universidade. CodeLand é um mundo digital que personifica os conceitos da programação que todos conhecemos, onde o código ganha vida. Este mundo está à beira do colapso devido à presença de 'NebulaShadow', um vilão que corrompeu o código fonte de CodeLand. Para restaurar a ordem, Code deve resolver desafios e responder perguntas sobre Java, sua linguagem de programação mais temida, enfrentando diversos Bugs e inimigos até chegar ao NebulaShadow.");
+        System.out.println("O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba e para você perder vidas terá que errar as perguntas.");
         System.out.println("ADICIONAR MAIS");
     }
 
