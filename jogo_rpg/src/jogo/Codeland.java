@@ -240,6 +240,18 @@ public class Codeland {
             }
         }
 
+        String primeiroConfrontoTres = "Era uma criatura gigante de metal.\nEla tinha vários braços, talvez uns 8, uma cabeça quadrada e um olho particularmente sinistro no centro.\nEsse monstro começou a olhar lentamente em direção a Code...";
+
+        for (char letra : primeiroConfrontoTres.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
         scanner.close();
     }
 
