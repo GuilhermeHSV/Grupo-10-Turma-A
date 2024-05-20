@@ -240,13 +240,13 @@ public class Codeland {
             }
         }
 
-        String primeiroConfrontoTres = "Era uma criatura gigante de metal.\nEla tinha vários braços, talvez uns 8, uma cabeça quadrada e um olho particularmente sinistro no centro.\nEsse monstro começou a olhar lentamente em direção a Code...";
+        String primeiroConfrontoTres = "Mentor Virtual, vendo o desespero nos olhos de Code, grita: \"Code! Esse monstro é um dos bugs que o NebulaShadow soltou pela cidade! Derrote-o e prove seu valor! Mas lembre-se, você precisa usar seus conhecimentos em Java!\"'";
 
         for (char letra : primeiroConfrontoTres.toCharArray()) {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
