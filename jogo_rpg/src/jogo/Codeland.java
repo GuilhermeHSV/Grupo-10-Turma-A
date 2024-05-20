@@ -55,6 +55,57 @@ public class Codeland {
         System.out.println("ADICIONAR MAIS");
     }
 
+    public static void perguntaUm(String[] args) {
+        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:'O QUE VOCÊ QUER DIZER COM ISSO ?'";
+
+        for (char letra : primeiraPergunta.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String primeiraPerguntaDois = "O Mostro chega perto de você...'";
+
+        for (char letra : primeiraPerguntaDois.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String primeiraPerguntaTres = "E simplesmente para. Abrindo uma tela em seu olho, que estava mostranddo um quiz para você responder!'";
+
+        for (char letra : primeiraPerguntaTres.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String primeiraPerguntaQuatro = "E simplesmente para. Abrindo uma tela em seu olho, que estava mostranddo um quiz para você responder!'";
+
+        for (char letra : primeiraPerguntaQuatro.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
     public static void jogar() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Capítulo 1: ");
@@ -249,6 +300,22 @@ public class Codeland {
                 TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            }
+        }
+
+        while (true) {
+            System.out.println("\nO que você vai fazer ?\n\n1 - Lutar!\n2 - Fugir!.\n3 - Tentar dialogar com o Robo\n");
+            escolha = scanner.nextInt();
+
+            if (escolha == 1) {
+                System.out.println("Que maravilha! Esse é o espírito de um verdadeiro Herói.\n Agora vamos lá!");
+                break;
+            } else if (escolha == 2) {
+                System.out.println(
+                        "Code, o escolhido! Não tema, pois será você quem trará a vitória para o nosso povo. Vamos lá para a cidade que eu lhe mostrarei o caminho.");
+                break;
+            } else {
+                System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
             }
         }
 
