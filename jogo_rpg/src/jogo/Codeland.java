@@ -80,7 +80,7 @@ public class Codeland {
             }
         }
 
-        String primeiraPerguntaTres = "E simplesmente para. Abrindo uma tela em seu olho, que estava mostranddo um quiz para você responder!'";
+        String primeiraPerguntaTres = "E simplesmente para. Abrindo uma tela em seu olho, que mostra um quiz para você responder:'";
 
         for (char letra : primeiraPerguntaTres.toCharArray()) {
             System.out.print(letra);
@@ -92,18 +92,50 @@ public class Codeland {
             }
         }
 
-        String primeiraPerguntaQuatro = "E simplesmente para. Abrindo uma tela em seu olho, que estava mostranddo um quiz para você responder!'";
+        System.out.println("\r\n" + //
+                "  ____                            _                                                                          \r\n"
+                + //
+                " |  _ \\ ___ _ __ __ _ _   _ _ __ | |_ __ _     _   _ _ __ ___  _                                             \r\n"
+                + //
+                " | |_) / _ \\ '__/ _` | | | | '_ \\| __/ _` |   | | | | '_ ` _ \\(_)                                            \r\n"
+                + //
+                " |  __/  __/ | | (_| | |_| | | | | || (_| |   | |_| | | | | | |_                                             \r\n"
+                + //
+                " |_|   \\___|_|  \\__, |\\__,_|_| |_|\\__\\__,_|    \\__,_|_| |_| |_(_)                                            \r\n"
+                + //
+                "   ____         |___/                     /\\/|             _       __     __         _   __            _     \r\n"
+                + //
+                "  |  _ \\  ___  ___| | __ _ _ __ __ _  ___|/\\/_  ___     __| | ___  \\ \\   / /_ _ _ __(_) /_/___   _____(_)___ \r\n"
+                + //
+                "  | | | |/ _ \\/ __| |/ _` | '__/ _` |/ __/ _` |/ _ \\   / _` |/ _ \\  \\ \\ / / _` | '__| |/ _` \\ \\ / / _ \\ / __|\r\n"
+                + //
+                "  | |_| |  __/ (__| | (_| | | | (_| | (_| (_| | (_) | | (_| |  __/   \\ V / (_| | |  | | (_| |\\ V /  __/ \\__ \\\r\n"
+                + //
+                "  |____/ \\___|\\___|_|\\__,_|_|  \\__,_|\\___\\__,_|\\___/   \\__,_|\\___|    \\_/ \\__,_|_|  |_|\\__,_| \\_/ \\___|_|___/\r\n"
+                + //
+                "                                      )_)                                                                    \r\n"
+                + //
+                "");
 
-        for (char letra : primeiraPerguntaQuatro.toCharArray()) {
-            System.out.print(letra);
-            try {
+        Scanner scanner = new Scanner(System.in);
+        int escolha = 0;
+        while (true) {
+            System.out.println("Qual é a sintaxe correta para declarar uma variável inteira em Java\n\n");
+            escolha = scanner.nextInt();
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            if (escolha == 1) {
+                System.out.println("Que maravilha! Esse é o espírito de um verdadeiro Herói.\n Agora vamos lá!");
+                break;
+            } else if (escolha == 2) {
+                System.out.println(
+                        "Code, o escolhido! Não tema, pois será você quem trará a vitória para o nosso povo. Vamos lá para a cidade que eu lhe mostrarei o caminho.");
+                break;
+            } else {
+                System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
             }
         }
 
+        scanner.close();
     }
 
     public static void jogar() {
