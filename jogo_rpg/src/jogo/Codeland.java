@@ -159,9 +159,24 @@ public class Codeland {
             }
         }
 
-        String introducaoMentorVirtual = "\"Enquanto 'Code' olhava perplexo para aquele painel, pensando em como ele foi parar naquele lugar estranhamente familiar, um homem se aproximava no horizonte.\nEra um homem de estatura baixa, careca e com uma barba mal feita, vestindo um sobretudo marrom e óculos 'tecnológicos'.\nEle se aproximou de 'Code' apresentando-se como: 'O Mentor Virtual'";
+        String introducaoMentorVirtual = "\"Enquanto 'Code' olhava perplexo para aquele painel, pensando em como ele foi parar naquele lugar estranhamente familiar, um homem se aproximava no horizonte.\nEra um homem de estatura baixa, careca e com uma barba mal feita, vestindo um sobretudo marrom e óculos 'tecnológicos'.\nEle se aproximou de 'Code' apresentando-se como: 'O Mentor Virtual'\n";
 
         for (char letra : introducaoMentorVirtual.toCharArray()) {
+            System.out.print(letra);
+            try {
+
+                TimeUnit.MILLISECONDS.sleep(15);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String dialogo = "\nMentor Virtual: \"Bem-vindo, Code. Você foi escolhido para salvar CodeLand. Este mundo está em perigo devido ao NebulaShadow, que corrompeu nosso código, deixando nossa cidade toda em um caos total. Para restaurar a ordem, você deve enfrentar vários desafios envolvendo todo o seu conhecimento em programação, mais especificamente, você terá que usar o nosso queridinho 'JAVA'.\n"
+                +
+                "\nCode: 'Tinha que ser logo Java? A linguagem de programação que eu mais tenho dificuldade!'\n" +
+                "\nMentor Virtual: 'Não se preocupe! Eu estou aqui justamente para te auxiliar no começo para que você consiga derrotar o chefão.\nVamos depressa para a cidade, vou te mostrar o básico por agora!\n";
+
+        for (char letra : dialogo.toCharArray()) {
             System.out.print(letra);
             try {
 
