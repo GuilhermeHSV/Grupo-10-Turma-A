@@ -65,8 +65,74 @@ public class Codeland {
                 "/ \\_//   / /_//  __/\\__ \\ |_) |  __/ |  | || (_| | |   \r\n" + //
                 "\\___/   /___,' \\___||___/ .__/ \\___|_|   \\__\\__,_|_|   \r\n" + //
                 "                        |_|                            \r\n" + //
-                "");
+                "\n\n");
 
+        System.out.println(
+                "Em mais um dia normal em seu trabalho, 'Code' trabalhava em um projeto complexo de Java, a linguagem de programação na qual tinha mais dificuldade. De repente 'Code' começou a sentir arrepios e seu computador começou a fazer barulhos estranhos. Um ponto preto apareceu em seu monitor e, por instinto, 'Code' aproximou seu rosto da tela para tentar ver melhor aquele ponto que aparentemente estava crescendo a cada segundo.");
+        try {
+
+            TimeUnit.SECONDS.sleep(20);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Quando, de repente...");
+
+        String textoPortal = "\r\n" + //
+                "         . :H@@@MM@M#H/.,+%;,\r\n" + //
+                "      ,/X+ +M@@M@MM%=,-%HMMM@X/,\r\n" + //
+                "     -+@MM; $M@@MH+-,;XMMMM@MMMM@+-\r\n" + //
+                "    ;@M@@M- XM@X;. -+XXXXXHHH@M@M#@/.\r\n" + //
+                "  ,%MM@@MH ,@%=            .---=-=:=,.\r\n" + //
+                "  -@#@@@MX .,              -%HX$$%%%+;\r\n" + //
+                " =-./@M@M$                  .;@MMMM@MM:\r\n" + //
+                " X@/ -$MM/                    .+MM@@@M$\r\n" + //
+                ",@M@H: :@:                    . -X#@@@@-\r\n" + //
+                ",@@@MMX, .                    /H- ;@M@M=\r\n" + //
+                ".H@@@@M@+,                    %MM+..%#$.\r\n" + //
+                " /MMMM@MMH/.                  XM@MH; -;\r\n" + //
+                "  /%+%$XHH@$=              , .H@@@@MX,\r\n" + //
+                "   .=--------.           -%H.,@@@@@MX,\r\n" + //
+                "   .%MM@@@HHHXX$$$%+- .:$MMX -M@@MM%.\r\n" + //
+                "     =XMMM@MM@MM#H;,-+HMM@M+ /MMMX=\r\n" + //
+                "       =%@M@M#@$-.=$@MM@@@M; %M%=\r\n" + //
+                "         ,:+$+-,/H#MMMMMMM@- -,\r\n" + //
+                "               =++%%%%+/:-.";
+
+        for (char caractere : textoPortal.toCharArray()) {
+            System.out.print(caractere);
+            try {
+                // Atraso de 50 milissegundos para um efeito de aparecer aos poucos
+                TimeUnit.MILLISECONDS.sleep(20);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        System.out.println(
+                "é sugado por um portal que se abre no monitor do seu computador. Ele acorda em Cybersantum, um mundo de código em constante mutação, onde conhece o Mentor Virtual.");
+
+        String[] textoJogo = {
+                "\r\n" + //
+                        "   ____          _      _                 _ \r\n" + //
+                        "  / ___|___   __| | ___| | __ _ _ __   __| |\r\n" + //
+                        " | |   / _ \\ / _` |/ _ \\ |/ _` | '_ \\ / _` |\r\n" + //
+                        " | |__| (_) | (_| |  __/ | (_| | | | | (_| |\r\n" + //
+                        "  \\____\\___/ \\__,_|\\___|_|\\__,_|_| |_|\\__,_|\r\n" + //
+                        "                                            \r\n"
+        };
+
+        for (String linha : textoJogo) {
+            for (char caractere : linha.toCharArray()) {
+                System.out.print(caractere);
+                try {
+                    // Atraso do tempo para um efeito de digitação
+                    TimeUnit.MILLISECONDS.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public static void creditos() {
