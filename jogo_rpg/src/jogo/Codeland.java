@@ -5,6 +5,11 @@ import java.util.concurrent.TimeUnit;
 
 public class Codeland {
 
+    public static int Vidas(int quantidade){
+        int vidas = quantidade;
+        return vidas;
+    }
+
     public static void tituloJogo(String titulo) { // CLasse para exibir o Título do Jogo RPG
         System.out.println("#".repeat(titulo.length()));
         System.out.println(titulo);
@@ -50,7 +55,8 @@ public class Codeland {
 
     public static void instrucoes() { // Classe para ver as instruções do Jogo
 
-        System.out.println("O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba e para você perder vidas terá que errar as perguntas.");
+        System.out.println(
+                "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba e para você perder vidas terá que errar as perguntas.");
         System.out.println("ADICIONAR MAIS");
     }
 
@@ -61,7 +67,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -73,7 +79,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -85,7 +91,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -118,6 +124,7 @@ public class Codeland {
 
         Scanner scanner = new Scanner(System.in);
         int escolha = 0;
+        int quantidade = 3;
         while (true) {
             System.out.println(
                     "Qual é a sintaxe correta para declarar uma variável inteira em Java\n\n1 - integer x = 10\n2 - int x = 10\n3 - num x = 10");
@@ -131,6 +138,13 @@ public class Codeland {
             } else if (escolha == 1 || escolha == 3) {
                 System.out.println(
                         "Errou! Tente novamente!");
+                        quantidade --;
+                        Vidas(quantidade);
+                        System.out.println("Você perdeu uma vida! Você está agora com " + quantidade);
+                        if(quantidade == 0 ){
+                            System.out.println("O jogo acabou! Você está sem vidas!");
+                            break;
+                        }
 
             } else {
                 System.out.println("Por favor, escolha uma opção válida (1, 2 ou 3)!");
@@ -158,7 +172,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(20);// deixar 20
+                TimeUnit.MILLISECONDS.sleep(0);// deixar 20
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -168,7 +182,7 @@ public class Codeland {
 
         try {
 
-            TimeUnit.SECONDS.sleep(15); // deixar como 15 no teste final
+            TimeUnit.SECONDS.sleep(0); // deixar como 15 no teste final
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -197,7 +211,7 @@ public class Codeland {
             System.out.print(caractere);
             try {
                 // Atraso nos caracteres
-                TimeUnit.MILLISECONDS.sleep(15); // deixar nos 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar nos 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -205,7 +219,7 @@ public class Codeland {
 
         try {
 
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.SECONDS.sleep(0);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -216,7 +230,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -237,7 +251,7 @@ public class Codeland {
                 System.out.print(caractere);
                 try {
                     // Atraso do tempo para um efeito de digitação
-                    TimeUnit.MILLISECONDS.sleep(10);// mudar para 10
+                    TimeUnit.MILLISECONDS.sleep(0);// mudar para 10
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -250,7 +264,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -265,7 +279,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -295,7 +309,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -307,7 +321,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -319,7 +333,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -331,7 +345,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
