@@ -338,7 +338,7 @@ public class Codeland {
         }
 
         while (true) {
-            System.out.println("\nO que você vai fazer ?\n\n1 - Lutar!\n2 - Fugir!.\n3 - Tentar dialogar com o Robo\n");
+            System.out.println("\nO que você vai fazer ?\n\n1 - Lutar!\n2 - Fugir!.\n");
             escolha = scanner.nextInt();
 
             if (escolha == 1) {
@@ -346,7 +346,8 @@ public class Codeland {
                 break;
             } else if (escolha == 2) {
                 System.out.println(
-                        "Code, o escolhido! Não tema, pois será você quem trará a vitória para o nosso povo. Vamos lá para a cidade que eu lhe mostrarei o caminho.");
+                        "Code, para de ser covarde! A cidade precisa de você para acabar com o chefão!");
+                        perguntaUm();
                 break;
             } else {
                 System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
