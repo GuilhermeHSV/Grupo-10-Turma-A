@@ -56,7 +56,7 @@ public class Codeland {
     public static void instrucoes() { // Classe para ver as instruções do Jogo
 
         System.out.println(
-                "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba, para você perder vidas é necessário errar as perguntas. Cada pergunta contém 3 vidas, se chegar a 0 você perde!");
+                "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso.\n Você terá 3 vidas, onde se chegar a 0 o jogo acaba, para você perder vidas é necessário errar as perguntas.\n Cada pergunta contém 3 vidas, se chegar a 0 você perde!");
         System.out.println("ADICIONAR MAIS");
     }
 
