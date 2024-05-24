@@ -160,6 +160,7 @@ public class Codeland {
     public static void jogar() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Capítulo 1: ");
+        System.outprintln("*************");
         System.out.println("\r\n" + //
                 "   ___      ___                          _             \r\n" + //
                 "  /___\\    /   \\___  ___ _ __   ___ _ __| |_ __ _ _ __ \r\n" + //
