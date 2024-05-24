@@ -56,12 +56,12 @@ public class Codeland {
     public static void instrucoes() { // Classe para ver as instruções do Jogo
 
         System.out.println(
-                "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba e para você perder vidas terá que errar as perguntas.");
+                "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso. Você terá 3 vidas, onde se chegar a 0 o jogo acaba, para você perder vidas é necessário errar as perguntas.");
         System.out.println("ADICIONAR MAIS");
     }
 
     public static void perguntaUm() {
-        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:'O QUE VOCÊ QUER DIZER COM ISSO ?'";
+        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:'O QUE VOCÊ QUER DIZER COM ISSO?'";
 
         for (char letra : primeiraPergunta.toCharArray()) {
             System.out.print(letra);
@@ -73,7 +73,7 @@ public class Codeland {
             }
         }
 
-        String primeiraPerguntaDois = "O Mostro chega perto de você...'";
+        String primeiraPerguntaDois = "O mostro chega perto de você...'";
 
         for (char letra : primeiraPerguntaDois.toCharArray()) {
             System.out.print(letra);
@@ -131,9 +131,8 @@ public class Codeland {
             escolha = scanner.nextInt();
 
             if (escolha == 2) {
-                System.out.println("Acertou!");
-                System.out.println(
-                        "O quiz que estava no rosto do monstro se apaga e ele simplesmente congela, como se estivesse sem energia!");
+                System.out.println("você acertou!");
+                System.out.println("O quiz que estava no rosto do monstro se apaga e ele simplesmente congela, como se estivesse sem energia!\n Monstro de metal: Eu voltarei!");
                 break;
             } else if (escolha == 1 || escolha == 3) {
                 System.out.println(
@@ -152,6 +151,10 @@ public class Codeland {
         }
 
         scanner.close();
+    
+    }
+    public static void perguntaDois() {
+
     }
 
     public static void jogar() {
@@ -380,7 +383,7 @@ public class Codeland {
                 "\r\n" + //
                 "Tecnologias Utilizadas:\r\n" + //
                 "- Linguagens: [Java]\r\n" + //
-                "\\n" +
+                "\\n" + 
                 "Copyright [2024] Codeland. Todos os direitos reservados.\r\n" + //
                 "");
     }
