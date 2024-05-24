@@ -61,7 +61,7 @@ public class Codeland {
     }
 
     public static void perguntaUm() {
-        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:'O QUE VOCÊ QUER DIZER COM ISSO?'";
+        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:O QUE VOCÊ QUER DIZER COM ISSO?";
 
         for (char letra : primeiraPergunta.toCharArray()) {
             System.out.print(letra);
