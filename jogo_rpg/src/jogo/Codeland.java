@@ -67,7 +67,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -79,7 +79,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -91,7 +91,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -175,7 +175,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0);// deixar 20
+                TimeUnit.MILLISECONDS.sleep(20);// deixar 20
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -185,7 +185,7 @@ public class Codeland {
 
         try {
 
-            TimeUnit.SECONDS.sleep(0); // deixar como 15 no teste final
+            TimeUnit.SECONDS.sleep(15); // deixar como 15 no teste final
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -214,7 +214,7 @@ public class Codeland {
             System.out.print(caractere);
             try {
                 // Atraso nos caracteres
-                TimeUnit.MILLISECONDS.sleep(0); // deixar nos 15
+                TimeUnit.MILLISECONDS.sleep(15); // deixar nos 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -233,7 +233,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -267,7 +267,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -282,7 +282,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -312,7 +312,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -324,7 +324,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -336,7 +336,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -348,7 +348,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
