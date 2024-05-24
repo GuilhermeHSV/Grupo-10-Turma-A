@@ -186,7 +186,7 @@ public class Codeland {
 
         try {
 
-            TimeUnit.SECONDS.sleep(10); // deixar como 15 no teste final
+            TimeUnit.SECONDS.sleep(5); // deixar como 15 no teste final
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
