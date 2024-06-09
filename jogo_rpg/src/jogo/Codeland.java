@@ -155,55 +155,6 @@ public class Codeland {
         return;
     }
 
-    public static void perguntaTres() {
-        Scanner scanner = new Scanner(System.in);
-        int escolha = 0;
-        int quantidade = 3;
-        while (true) {
-            System.out.println("Qual é o resultado da expressão 10 % 3?\n");
-            System.out.println("1 - 0\n2 - 1\n3 - 2");
-            escolha = scanner.nextInt();
-
-            if (escolha == 2) {
-                System.out.println("Você acertou!");
-                break;
-            } else {
-                System.out.println("Resposta incorreta! Você perdeu uma vida!");
-                quantidade--;
-                System.out.println("Você está agora com " + quantidade + " vida(s)");
-                if (quantidade == 0) {
-                    System.out.println("Você perdeu todas as vidas! O jogo acabou!");
-                    break;
-                }
-            }
-        }
-    }
-
-    public static void perguntaQuatro() {
-        Scanner scanner = new Scanner(System.in);
-        int escolha = 0;
-        int quantidade = 3;
-
-        while (true) {
-            System.out.println("Qual é o tipo de dado utilizado para armazenar texto em Java?\n");
-            System.out.println("1 - char\n2 - int\n3 - String");
-            escolha = scanner.nextInt();
-
-            if (escolha == 3) {
-                System.out.println("Você acertou!");
-                break;
-            } else {
-                System.out.println("Resposta incorreta! Você perdeu uma vida!");
-                quantidade--;
-                System.out.println("Você está agora com " + quantidade + " vida(s)");
-                if (quantidade == 0) {
-                    System.out.println("Você perdeu todas as vidas! O jogo acabou!");
-                    break;
-                }
-            }
-        }
-    }
-
     public static void confrontoChefe() {
         Scanner scanner = new Scanner(System.in);
         int escolha = 0;
@@ -519,16 +470,66 @@ public class Codeland {
                 while (true) {
                     escolha = 0;
                     System.out.println(
-                            "Qual é a saída do seguinte código Java?\n\n'public static void main(String[] args){\nint x - 5;\n System.out.println(++x;\n\n)}");
-                    System.out.println("1 - 5\n2 - 6\n 3 - 7");
+                            "Qual é o resultado da expressão 10 % 3?\n");
+                    System.out.println("1 - 0\n2 - 1\n3 - 2");
                     escolha = scanner.nextInt();
 
                     if (escolha == 2) {
                         System.out.println("você acertou!");
-                        System.out.println(
-                                "O quiz que estava no rosto do monstro se apaga e ele simplesmente congela, como se estivesse sem energia!\n Monstro de metal: Eu voltarei!");
                         break;
                     } else if (escolha == 1 || escolha == 3) {
+                        System.out.println(
+                                "Errou! Tente novamente!");
+                        quantidade--;
+                        Vidas(quantidade);
+                        System.out.println("Você perdeu uma vida! Você está agora com " + quantidade);
+                        if (quantidade == 0) {
+                            System.out.println("O jogo acabou! Você está sem vidas!");
+                            break;
+                        }
+
+                    } else {
+                        System.out.println("Por favor, escolha uma opção válida (1, 2 ou 3)!");
+                    }
+
+                    break;
+                }
+            } else if (escolha == 2) {
+                System.out.println(
+                        "Code, para de ser covarde! A cidade precisa de você para acabar com o chefão!");
+
+                break;
+            } else {
+                System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
+            }
+        }
+
+        System.out.println("Parte 4:");
+
+        System.out.println(
+                "Code consegue entrar no castelo e corre até o salão principal...\nE no trono estava sentado um mostro bizarro.");
+
+        System.out.println(
+                "Code sabia que aquele era o causador de todo o mal que estava acontecendo no mundo de Codeland.\nMas antes de poder ir para cima de Nebula Shadow, surge mais um mostro um pouco maior que os anteriores, abrindo uma tela:  ");
+
+        while (true) {
+            System.out.println("\nO que você vai fazer ?\n\n1 - Lutar!\n2 - Fugir!.\n");
+            escolha = scanner.nextInt();
+
+            if (escolha == 1) {
+
+                int quantidade = 3;
+                while (true) {
+                    escolha = 0;
+                    System.out.println(
+                            "Qual é o tipo de dado utilizado para armazenar texto em Java? ");
+                    System.out.println("1 - char\n2 - int\n3 - String");
+                    escolha = scanner.nextInt();
+
+                    if (escolha == 3) {
+                        System.out.println("você acertou!");
+                        break;
+                    } else if (escolha == 1 || escolha == 2) {
                         System.out.println(
                                 "Errou! Tente novamente!");
                         quantidade--;
