@@ -556,6 +556,9 @@ public class Codeland {
             }
         }
 
+        System.out.println("Parte Final");
+        System.out.println("Code chegou até o chefão e começa a grande batalha: ");
+
         scanner.close();
     }
 
