@@ -155,36 +155,6 @@ public class Codeland {
         return;
     }
 
-    public static void confrontoChefe() {
-        Scanner scanner = new Scanner(System.in);
-        int escolha = 0;
-        int quantidade = 3;
-        while (true) {
-            System.out.println("Você está enfrentando Nebula Shadow, o chefe final!\n");
-            System.out.println("Nebula Shadow: Prepare-se para sua derrota, Code!\n");
-            System.out.println("Qual é a saída do seguinte código Java?\n");
-            System.out.println(
-                    "public static void main(String[] args) {\n    int x = 10;\n    if (x > 5) {\n        System.out.println(\"Hello!\");\n    }\n}\n");
-            System.out.println("1 - Hello\n2 - Nenhuma saída\n3 - Erro de compilação");
-            escolha = scanner.nextInt();
-
-            if (escolha == 1) {
-                System.out.println("Você acertou!");
-                System.out.println("Você derrotou Nebula Shadow e salvou Codeland!");
-                break;
-            } else {
-                System.out.println("Resposta incorreta! Nebula Shadow ataca você!");
-                quantidade--;
-                System.out.println("Você está agora com " + quantidade + " vida(s)");
-                if (quantidade == 0) {
-                    System.out.println("Você perdeu todas as vidas! Nebula Shadow venceu!");
-                    break;
-                }
-            }
-        }
-        scanner.close();
-    }
-
     public static void jogar() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Capítulo 1: ");
@@ -559,7 +529,63 @@ public class Codeland {
         System.out.println("Parte Final");
         System.out.println("Code chegou até o chefão e começa a grande batalha: ");
 
+        while (true) {
+            System.out.println("\nO que você vai fazer ?\n\n1 - Lutar!\n2 - Fugir!.\n");
+            escolha = scanner.nextInt();
+
+            if (escolha == 1) {
+
+                int quantidade = 3;
+                while (true) {
+                    escolha = 0;
+                    System.out.println(
+                            "Qual é a saída do seguinte código Java?\n'public static void main (String[] args) {\n int x = 10;\n if(x > 5)}\n'");
+                    System.out.println("1 - Hello\n2 - Nenhuma saída\n3 - Erro de compilação");
+                    escolha = scanner.nextInt();
+
+                    if (escolha == 1) {
+                        System.out.println("você acertou!");
+                        break;
+                    } else if (escolha == 3 || escolha == 2) {
+                        System.out.println(
+                                "Errou! Tente novamente!");
+                        quantidade--;
+                        Vidas(quantidade);
+                        System.out.println("Você perdeu uma vida! Você está agora com " + quantidade);
+                        if (quantidade == 0) {
+                            System.out.println("O jogo acabou! Você está sem vidas!");
+                            break;
+                        }
+
+                    } else {
+                        System.out.println("Por favor, escolha uma opção válida (1, 2 ou 3)!");
+                    }
+
+                    break;
+                }
+            } else if (escolha == 2) {
+                System.out.println(
+                        "Code, para de ser covarde! A cidade precisa de você para acabar com o chefão!");
+
+                break;
+            } else {
+                System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
+            }
+        }
+
+        finalDoJogo(true);
+
         scanner.close();
+    }
+
+    public static void finalDoJogo(boolean venceu) {
+        if (venceu) {
+            System.out.println("Parabéns! Você salvou Codeland e derrotou todos os desafios!");
+            System.out.println("Obrigado por jogar!");
+        } else {
+            System.out.println("Você perdeu todas as vidas! Codeland foi dominada por Nebula Shadow!");
+            System.out.println("Melhor sorte da próxima vez!");
+        }
     }
 
     public static void creditos() {
