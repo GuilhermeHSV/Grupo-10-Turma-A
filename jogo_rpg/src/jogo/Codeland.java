@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Codeland {
 
-    public static int Vidas(int quantidade){
+    public static int Vidas(int quantidade) {
         int vidas = quantidade;
         return vidas;
     }
@@ -61,100 +61,45 @@ public class Codeland {
     }
 
     public static void perguntaUm() {
-        String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:O QUE VOCÊ QUER DIZER COM ISSO?";
-
-        for (char letra : primeiraPergunta.toCharArray()) {
-            System.out.print(letra);
-            try {
-
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        String primeiraPerguntaDois = "O mostro chega perto de você...'";
-
-        for (char letra : primeiraPerguntaDois.toCharArray()) {
-            System.out.print(letra);
-            try {
-
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        String primeiraPerguntaTres = "E simplesmente para. Abrindo uma tela em seu olho, que mostra um quiz para você responder:'";
-
-        for (char letra : primeiraPerguntaTres.toCharArray()) {
-            System.out.print(letra);
-            try {
-
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        System.out.println("\r\n" + //
-                "  ____                            _                                                                          \r\n"
-                + //
-                " |  _ \\ ___ _ __ __ _ _   _ _ __ | |_ __ _     _   _ _ __ ___  _                                             \r\n"
-                + //
-                " | |_) / _ \\ '__/ _` | | | | '_ \\| __/ _` |   | | | | '_ ` _ \\(_)                                            \r\n"
-                + //
-                " |  __/  __/ | | (_| | |_| | | | | || (_| |   | |_| | | | | | |_                                             \r\n"
-                + //
-                " |_|   \\___|_|  \\__, |\\__,_|_| |_|\\__\\__,_|    \\__,_|_| |_| |_(_)                                            \r\n"
-                + //
-                "   ____         |___/                     /\\/|             _       __     __         _   __            _     \r\n"
-                + //
-                "  |  _ \\  ___  ___| | __ _ _ __ __ _  ___|/\\/_  ___     __| | ___  \\ \\   / /_ _ _ __(_) /_/___   _____(_)___ \r\n"
-                + //
-                "  | | | |/ _ \\/ __| |/ _` | '__/ _` |/ __/ _` |/ _ \\   / _` |/ _ \\  \\ \\ / / _` | '__| |/ _` \\ \\ / / _ \\ / __|\r\n"
-                + //
-                "  | |_| |  __/ (__| | (_| | | | (_| | (_| (_| | (_) | | (_| |  __/   \\ V / (_| | |  | | (_| |\\ V /  __/ \\__ \\\r\n"
-                + //
-                "  |____/ \\___|\\___|_|\\__,_|_|  \\__,_|\\___\\__,_|\\___/   \\__,_|\\___|    \\_/ \\__,_|_|  |_|\\__,_| \\_/ \\___|_|___/\r\n"
-                + //
-                "                                      )_)                                                                    \r\n"
-                + //
-                "");
-
-        Scanner scanner = new Scanner(System.in);
-        int escolha = 0;
-        int quantidade = 3;
-        while (true) {
-            System.out.println(
-                    "Qual é a sintaxe correta para declarar uma variável inteira em Java\n\n1 - integer x = 10\n2 - int x = 10\n3 - num x = 10");
-            escolha = scanner.nextInt();
-
-            if (escolha == 2) {
-                System.out.println("você acertou!");
-                System.out.println("O quiz que estava no rosto do monstro se apaga e ele simplesmente congela, como se estivesse sem energia!\n Monstro de metal: Eu voltarei!");
-                break;
-            } else if (escolha == 1 || escolha == 3) {
-                System.out.println(
-                        "Errou! Tente novamente!");
-                        quantidade --;
-                        Vidas(quantidade);
-                        System.out.println("Você perdeu uma vida! Você está agora com " + quantidade);
-                        if(quantidade == 0 ){
-                            System.out.println("O jogo acabou! Você está sem vidas!");
-                            break;
-                        }
-
-            } else {
-                System.out.println("Por favor, escolha uma opção válida (1, 2 ou 3)!");
-            }
-        }
-
-        scanner.close();
-    
+        System.out.println(
+                "Ao adentrar a cidade de Codeland, Code se depara com um monstro de metal gigante que bloqueia seu caminho. O Mentor Virtual o encoraja a enfrentar o desafio, enquanto o monstro avança ameaçadoramente em sua direção.\n"
+                        + //
+                        "\n" + //
+                        "Pergunta:\n" + //
+                        "Qual é a sintaxe correta para declarar uma variável inteira em Java?\n" + //
+                        "\n" + //
+                        "integer x = 10\n" + //
+                        "int x = 10\n" + //
+                        "num x = 10");
     }
-    public static void perguntaDois() {
 
+    public static void perguntaDois() {
+        System.out.println(
+                "Após derrotar o monstro de metal, Code se aventura pelas ruas de Codeland. Ele encontra uma passagem estreita bloqueada por uma parede de fogo mágico. Para atravessá-la, ele deve responder a uma pergunta desafiadora.\n"
+                        + //
+                        "\n" + //
+                        "Pergunta:\n" + //
+                        "Qual é o resultado da expressão (5 * 3) - (8 / 2) em Java?\n" + //
+                        "\n" + //
+                        "14\n" + //
+                        "15\n" + //
+                        "16");
+    }
+
+    public static void perguntaTres() {
+        // Implementação da terceira pergunta
+    }
+
+    public static void perguntaQuatro() {
+        // Implementação da quarta pergunta
+    }
+
+    public static void perguntaCinco() {
+        // Implementação da quinta pergunta
+    }
+
+    public static void batalhaFinal() {
+        // Implementação da batalha final com Nebula Shadow
     }
 
     public static void jogar() {
@@ -176,7 +121,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(20);// deixar 20
+                TimeUnit.MILLISECONDS.sleep(0);// deixar 20
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -186,7 +131,7 @@ public class Codeland {
 
         try {
 
-            TimeUnit.SECONDS.sleep(5); // deixar como 15 no teste final
+            TimeUnit.SECONDS.sleep(0); // deixar como 15 no teste final
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -215,7 +160,7 @@ public class Codeland {
             System.out.print(caractere);
             try {
                 // Atraso nos caracteres
-                TimeUnit.MILLISECONDS.sleep(15); // deixar nos 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar nos 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -234,7 +179,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -268,7 +213,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15);// mudar para 15
+                TimeUnit.MILLISECONDS.sleep(0);// mudar para 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -283,7 +228,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -313,7 +258,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(15); // deixar 15
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 15
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -325,7 +270,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -337,7 +282,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(100); // deixar 100
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 100
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -349,7 +294,7 @@ public class Codeland {
             System.out.print(letra);
             try {
 
-                TimeUnit.MILLISECONDS.sleep(30); // deixar 30
+                TimeUnit.MILLISECONDS.sleep(0); // deixar 30
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -365,7 +310,7 @@ public class Codeland {
             } else if (escolha == 2) {
                 System.out.println(
                         "Code, para de ser covarde! A cidade precisa de você para acabar com o chefão!");
-                        perguntaUm();
+                perguntaUm();
                 break;
             } else {
                 System.out.println("Por favor, escolha uma opção válida (1 ou 2)!");
@@ -384,7 +329,7 @@ public class Codeland {
                 "\r\n" + //
                 "Tecnologias Utilizadas:\r\n" + //
                 "- Linguagens: [Java]\r\n" + //
-                "\\n" + 
+                "\\n" +
                 "Copyright [2024] Codeland. Todos os direitos reservados.\r\n" + //
                 "");
     }
