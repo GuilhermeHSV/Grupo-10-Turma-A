@@ -53,14 +53,14 @@ public class Codeland {
         scanner.close();
     }
 
-    public static void instrucoes() { // Classe para ver as instruções do Jogo
+      public static void instrucoes() { // Classe para ver as instruções do Jogo
 
         System.out.println(
                 "O jogo funcionará mostrando diálogos na tela e contendo até 3 opções de respostas variadas, que afetam diretamente a jogabilidade e o progresso.\n Você terá 3 vidas, onde se chegar a 0 o jogo acaba, para você perder vidas é necessário errar as perguntas.\n Cada pergunta contém 3 vidas, se chegar a 0 você perde!");
         System.out.println("ADICIONAR MAIS");
     }
 
-    public static void perguntaUm() {
+      public static void perguntaUm() {
         String primeiraPergunta = "Você escolheu ficar e lutar contra o Monstro de metal!\nEle vem correndo em sua direção em alta velocidade e você fica paralisado de medo!\nMentor Virtual:'Code! Não se preocupe, ele não vai fazer nada com você... pelo menos por enquanto HAHAHA!'\nCode:O QUE VOCÊ QUER DIZER COM ISSO?";
 
         for (char letra : primeiraPergunta.toCharArray()) {
